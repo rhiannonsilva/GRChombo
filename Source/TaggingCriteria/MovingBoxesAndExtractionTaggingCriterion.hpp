@@ -64,7 +64,7 @@ class MovingBoxesAndExtractionTaggingCriterion
                     simd_max(abs(coords.x), abs(coords.y));
                 const data_t max_abs_xyz = simd_max(max_abs_xy, abs(coords.z));
                 auto regrid = simd_compare_lt(
-                    max_abs_xyz, 2.5 * factor * m_puncture_masses[ipuncture]);
+                    max_abs_xyz, 1.5 * factor * m_puncture_masses[ipuncture]);
                 criterion = simd_conditional(regrid, 100.0, criterion);
             }
         }
