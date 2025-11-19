@@ -9,7 +9,7 @@
 verbosity = 0
 
 # location / naming of output files
-output_path = "/cosma8/data/dp034/dc-silv5/GRChombosims/BBHTPtest" # Main path for all files. Must exist!
+# output_path = "" # Main path for all files. Must exist!
 chk_prefix = BinaryBHChk_
 plot_prefix = BinaryBHPlot_
 # restart_file = BinaryBHChk_000000.3d.hdf5
@@ -61,7 +61,7 @@ momentumB =  0.0841746  0.000510846 0.0
 # NB - if you have a non-cubic grid, you can specify 'N1' or 'N1_full',
 # 'N2' or 'N2_full' and 'N3' or 'N3_full' ( then dx_coarsest = L/N(max) )
 # NB - the N values need to be multiples of the block_factor
-N_full = 64
+N_full = 48
 L_full = 512
 
 # Maximum number of times you can regrid above coarsest level
@@ -76,7 +76,7 @@ regrid_threshold = 0.05
 
 # Max and min box sizes
 max_box_size = 16
-min_box_size = 16
+min_box_size = 8
 
 # tag_buffer_size = 3
 # grid_buffer_size = 8
